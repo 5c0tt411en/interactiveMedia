@@ -1,10 +1,12 @@
 #pragma once
 
 #include "ofMain.h"
-#include "ofxKinect.h"
 #include "ofxOsc.h"
-#include "ofxUI.h"
+#include "ofxKinect.h"
 #include "ofxXmlSettings.h"
+#include "ofxOpenCv.h"
+
+#define HOST "localhost"
 
 class ofApp : public ofBaseApp{
 
@@ -24,6 +26,21 @@ class ofApp : public ofBaseApp{
 		void windowResized(int w, int h);
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
+		
+    // OSC
+    ofxOscSender sender;
+    ofxOscMessage msg;
+    int PORT = 8000;
     
-
+    // Kinect
+    ofxKinect kinect;
+    
+    // CV
+    
+    
+    // UI
+    
+    
+    
+    ofPoint pos;
 };

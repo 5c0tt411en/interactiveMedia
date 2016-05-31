@@ -2,12 +2,15 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-
+    sender.setup(HOST, PORT);
 }
 
 //--------------------------------------------------------------
 void ofApp::update(){
-
+    msg.setAddress("/pos");
+    msg.addFloatArg(pos.x);
+    msg.addFloatArg(pos.y);
+    sender.sendMessage(msg);
 }
 
 //--------------------------------------------------------------
