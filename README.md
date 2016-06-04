@@ -1,15 +1,13 @@
 # Interactive media
 Program files for interactive media for Tama Art University idd students.
 
-## 01
+## switcher
 ### Requirements
 - openFrameworks 0.9.3+
-- ofxUI
-- ofxKinect
-- ofxXmlSettings
 
 ### Usage
-
+Just paste your code to "yourName.cpp" and "yourName.h".  
+If you want to change time of each project, change time01, time 02, time03 at "ofApp.h".
 
 ## Copyright
 Copyright 2016-, Scott Allen([scottallen.ws](http://scottallen.ws)).  
