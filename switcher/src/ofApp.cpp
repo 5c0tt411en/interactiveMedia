@@ -2,8 +2,11 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
+    kuroda_ = new kuroda();
     kuroda_->setup();
+    suzuki_ = new suzuki();
     suzuki_->setup();
+    ito_ = new ito();
     ito_->setup();
 }
 
